@@ -116,4 +116,57 @@ body {
   font-size: 28px;
   color: white;
   cursor: pointer;
+
 } */
+
+/* Your existing CSS remains the same */
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* stack controls and map */
+  }
+
+  #controls {
+    width: 100%;           /* full width on mobile */
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #map {
+    height: 70vh;          /* map gets most of the space */
+    width: 100%;
+  }
+
+  #pointForm input, 
+  #pointForm button, 
+  #resetBtn, 
+  #calcBtn {
+    font-size: 14px;       /* slightly smaller text */
+    padding: 10px;
+  }
+
+  #controls h2 {
+    font-size: 18px;
+  }
+
+  #infoPanel {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #map {
+    height: 60vh; /* slightly smaller map for very small screens */
+  }
+
+  #controls {
+    padding: 8px;
+  }
+
+  #controls h2 {
+    font-size: 16px;
+  }
+}
